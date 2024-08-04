@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "stew3433mod:item/raw_zorium"
+    }
+}
