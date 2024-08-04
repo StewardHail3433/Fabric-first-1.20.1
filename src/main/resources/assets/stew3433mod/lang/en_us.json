@@ -2,5 +2,8 @@
     "item.stew3433mod.zorium": "Zorium",
     "item.stew3433mod.raw_zorium": "Raw Zorium",
 
+    "block.stew3433mod.deepslate_zorium_ore": "Zorium Ore",
+    "block.stew3433mod.zorium_block": "Block of Zorium",
+
     "itemgroup.zorium": "Stew3433 Mod Group"
 }

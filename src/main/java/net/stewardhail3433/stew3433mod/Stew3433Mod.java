@@ -1,6 +1,7 @@
 package net.stewardhail3433.stew3433mod;
 
 import net.fabricmc.api.ModInitializer;
+import net.stewardhail3433.stew3433mod.block.ModBlocks;
 import net.stewardhail3433.stew3433mod.item.ModItemGroups;
 import net.stewardhail3433.stew3433mod.item.ModItems;
 
@@ -15,6 +16,8 @@ public class Stew3433Mod implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Hello Fabric world!");
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+
 		ModItemGroups.registerItemGroups();
 	}
 }

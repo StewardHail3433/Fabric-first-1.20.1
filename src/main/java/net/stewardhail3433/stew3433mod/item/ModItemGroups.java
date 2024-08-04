@@ -2,6 +2,7 @@ package net.stewardhail3433.stew3433mod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.stewardhail3433.stew3433mod.Stew3433Mod;
+import net.stewardhail3433.stew3433mod.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -16,7 +17,11 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.ZORIUM)).entries((displayContext, entries) -> {
                         entries.add(ModItems.ZORIUM);
                         entries.add(ModItems.RAW_ZORIUM);
-                    }).build());
+
+                        entries.add(ModBlocks.DEEPSLATE_ZORIUM_ORE.asItem());
+                        entries.add(ModBlocks.ZORIUM_BLOCK.asItem());
+                    }).
+                    build());
 
 
     public static void registerItemGroups() {

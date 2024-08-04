@@ -14,7 +14,7 @@ public class ModItems {
     public static final Item ZORIUM = registerItem("zorium", new Item(new FabricItemSettings()));
     public static final Item RAW_ZORIUM = registerItem("raw_zorium", new Item(new FabricItemSettings()));
     
-    public static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
+    public static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(ZORIUM);
         entries.add(RAW_ZORIUM);
     }
@@ -26,6 +26,6 @@ public class ModItems {
     public static void registerModItems() {
         Stew3433Mod.LOGGER.info("Registering Mod Items for " + Stew3433Mod.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientTabItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
     }
 }

@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "stew3433mod:block/deepslate_zorium_ore"
+    }
+}
