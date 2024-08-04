@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "stew3433mod",
+	"version": "${version}",
+	"name": "Stew3433 Mod",
+	"description": "This is StewardHail3433's first and prob only mod",
+	"authors": [
+		"StewardHail3433"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/stew3433mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.stewardhail3433.stew3433mod.Stew3433Mod"
+		],
+		"client": [
+			"net.stewardhail3433.stew3433mod.Stew3433ModClient"
+		],
+		"fabric-datagen": [
+			"net.stewardhail3433.stew3433mod.Stew3433ModDataGenerator"
+		]
+	},
+	"mixins": [
+		"stew3433mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
