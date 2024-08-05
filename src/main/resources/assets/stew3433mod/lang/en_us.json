@@ -1,9 +1,12 @@
 {
     "item.stew3433mod.zorium": "Zorium",
     "item.stew3433mod.raw_zorium": "Raw Zorium",
+    "item.stew3433mod.zorium_sword": "Zorium Sword",
 
     "block.stew3433mod.deepslate_zorium_ore": "Zorium Ore",
     "block.stew3433mod.zorium_block": "Block of Zorium",
+    "block.stew3433mod.tawin_log": "Tawin Log",
+    "block.stew3433mod.stripped_tawin_log": "Stripped Tawin Log",
 
     "itemgroup.zorium": "Stew3433 Mod Group"
 }

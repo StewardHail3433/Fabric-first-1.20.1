@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "mics",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "stew3433mod:zorium"
+        }
+    },
+    "result": {
+        "item": "stew3433mod:zorium_block"
+    }
+}

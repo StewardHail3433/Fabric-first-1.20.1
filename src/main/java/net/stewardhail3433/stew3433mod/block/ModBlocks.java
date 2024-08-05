@@ -2,24 +2,26 @@ package net.stewardhail3433.stew3433mod.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.PillarBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.stewardhail3433.stew3433mod.Stew3433Mod;
 
 public class ModBlocks {
-    public static final Block DEEPSLATE_ZORIUM_ORE = registerBlock("deepslate_zorium_ore", new Block(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).sounds(BlockSoundGroup.DEEPSLATE)));
-    public static final Block ZORIUM_BLOCK = registerBlock("zorium_block", new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK)));
-    
-    
+    public static final Block DEEPSLATE_ZORIUM_ORE = registerBlock("deepslate_zorium_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).sounds(BlockSoundGroup.DEEPSLATE).strength(2f), UniformIntProvider.create(3,6)));
+    public static final Block ZORIUM_BLOCK = registerBlock("zorium_block", new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK).strength(2f)));
+    public static final Block TAWIN_LOG = registerBlock("tawin_log", new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)));
+    public static final Block STRIPPED_TAWIN_LOG = registerBlock("stripped_tawin_log", new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)));
+
     public static void addItemsToBuildingBlocksItemGroup(FabricItemGroupEntries entries) {
         entries.add(DEEPSLATE_ZORIUM_ORE.asItem());
         entries.add(ZORIUM_BLOCK.asItem());

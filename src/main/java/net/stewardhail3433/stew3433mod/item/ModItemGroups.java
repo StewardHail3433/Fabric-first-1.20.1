@@ -20,6 +20,10 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.DEEPSLATE_ZORIUM_ORE.asItem());
                         entries.add(ModBlocks.ZORIUM_BLOCK.asItem());
+                        entries.add(ModBlocks.TAWIN_LOG.asItem());
+                        entries.add(ModBlocks.STRIPPED_TAWIN_LOG.asItem());
+
+                        entries.add(ModItems.ZORIUM_SWORD);
                     }).
                     build());
 
