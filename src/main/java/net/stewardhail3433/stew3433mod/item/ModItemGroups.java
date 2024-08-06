@@ -18,12 +18,18 @@ public class ModItemGroups {
                         entries.add(ModItems.ZORIUM);
                         entries.add(ModItems.RAW_ZORIUM);
 
+
                         entries.add(ModBlocks.DEEPSLATE_ZORIUM_ORE.asItem());
                         entries.add(ModBlocks.ZORIUM_BLOCK.asItem());
                         entries.add(ModBlocks.TAWIN_LOG.asItem());
                         entries.add(ModBlocks.STRIPPED_TAWIN_LOG.asItem());
 
                         entries.add(ModItems.ZORIUM_SWORD);
+                        entries.add(ModItems.ZORIUM_PICKAXE);
+                        entries.add(ModItems.ZORIUM_AXE);
+                        entries.add(ModItems.ZORIUM_SHOVEL);
+                        entries.add(ModItems.ZORIUM_HOE);
+                        
                     }).
                     build());
 
