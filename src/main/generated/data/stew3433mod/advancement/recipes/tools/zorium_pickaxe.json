@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:zorium_pickaxe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_zorium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stew3433mod:zorium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_zorium_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stew3433mod:zorium_pickaxe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_zorium",
+      "has_zorium_pickaxe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:zorium_pickaxe"
+    ]
+  }
+}

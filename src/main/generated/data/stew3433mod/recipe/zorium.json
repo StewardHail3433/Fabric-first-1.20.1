@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "stew3433mod:zorium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "stew3433mod:zorium"
+  }
+}

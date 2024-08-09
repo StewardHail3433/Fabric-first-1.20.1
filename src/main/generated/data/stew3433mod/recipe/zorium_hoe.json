@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "minecraft:blaze_rod"
+    },
+    "Z": {
+      "item": "stew3433mod:zorium"
+    }
+  },
+  "pattern": [
+    "ZZ",
+    " B",
+    " B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "stew3433mod:zorium_hoe"
+  }
+}

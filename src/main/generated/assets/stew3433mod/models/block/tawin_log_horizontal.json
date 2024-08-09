@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "stew3433mod:block/tawin_log_top",
+    "side": "stew3433mod:block/tawin_log"
+  }
+}

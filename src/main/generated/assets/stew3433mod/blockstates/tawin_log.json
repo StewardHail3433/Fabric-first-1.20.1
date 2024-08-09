@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "stew3433mod:block/tawin_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "stew3433mod:block/tawin_log"
+    },
+    "axis=z": {
+      "model": "stew3433mod:block/tawin_log_horizontal",
+      "x": 90
+    }
+  }
+}

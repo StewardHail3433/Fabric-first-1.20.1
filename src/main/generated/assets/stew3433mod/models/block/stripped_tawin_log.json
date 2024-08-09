@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "stew3433mod:block/stripped_tawin_log_top",
+    "side": "stew3433mod:block/stripped_tawin_log"
+  }
+}

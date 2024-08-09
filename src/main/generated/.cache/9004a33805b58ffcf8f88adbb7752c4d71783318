@@ -1,0 +1,9 @@
+// 1.21.1	2024-08-08T22:04:19.8227912	Stew3433 Mod/Tags for minecraft:block
+e5a3121ca6d71dfa0d8f125fe210828bb5ab3f40 data\minecraft\tags\block\logs.json
+ad41c11578d63f82d03fa9772d8d4d115d17e9a7 data\fabric\tags\block\needs_tool_level_4.json
+e5a3121ca6d71dfa0d8f125fe210828bb5ab3f40 data\minecraft\tags\block\logs_that_burn.json
+ad41c11578d63f82d03fa9772d8d4d115d17e9a7 data\minecraft\tags\block\mineable\pickaxe.json
+e5a3121ca6d71dfa0d8f125fe210828bb5ab3f40 data\minecraft\tags\block\mineable\axe.json
+e5a3121ca6d71dfa0d8f125fe210828bb5ab3f40 data\fabric\tags\block\needs_tool_level_5.json
+e5a3121ca6d71dfa0d8f125fe210828bb5ab3f40 data\stew3433mod\tags\block\tawin_logs.json
+e5a3121ca6d71dfa0d8f125fe210828bb5ab3f40 data\minecraft\tags\block\incorrect_for_netherite_tool.json

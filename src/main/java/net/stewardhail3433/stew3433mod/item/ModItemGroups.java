@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
     public static final ItemGroup Stew3433ModGroup = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(Stew3433Mod.MOD_ID, "stew3433mod"),
+            Identifier.of(Stew3433Mod.MOD_ID, "stew3433mod"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.stew3433mod"))
                     .icon(() -> new ItemStack(ModItems.ZORIUM)).entries((displayContext, entries) -> {
                         entries.add(ModItems.ZORIUM);
@@ -29,6 +29,11 @@ public class ModItemGroups {
                         entries.add(ModItems.ZORIUM_AXE);
                         entries.add(ModItems.ZORIUM_SHOVEL);
                         entries.add(ModItems.ZORIUM_HOE);
+
+                        entries.add(ModItems.ZORIUM_HELMET);
+                        entries.add(ModItems.ZORIUM_CHESTPLATE);
+                        entries.add(ModItems.ZORIUM_LEGGINGS);
+                        entries.add(ModItems.ZORIUM_BOOTS);
                         
                     }).
                     build());

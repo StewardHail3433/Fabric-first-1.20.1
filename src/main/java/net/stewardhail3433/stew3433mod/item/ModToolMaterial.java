@@ -1,22 +1,26 @@
 package net.stewardhail3433.stew3433mod.item;
 
 import java.util.function.Supplier;
+
+import net.minecraft.block.Block;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.registry.tag.TagKey;
+import net.stewardhail3433.stew3433mod.util.ModTags;
 
 public enum ModToolMaterial implements ToolMaterial{
-    ZORIUM(5, 1021, 10.0F, 
+    ZORIUM(ModTags.Blocks.INCORRECT_FOR_ZORIUM_TOOL, 1021, 10.0F, 
     3.5F, 20, () -> Ingredient.ofItems(ModItems.ZORIUM));
 
-    private final int miningLevel;
+    private final TagKey<Block> inverseTag;
 	private final int itemDurability;
 	private final float miningSpeed;
 	private final float attackDamage;
 	private final int enchantability;
 	private final Supplier<Ingredient> repairIngredient;
 
-	private ModToolMaterial(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
-		this.miningLevel = miningLevel;
+	private ModToolMaterial(TagKey<Block> inverseTag, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
+		this.inverseTag = inverseTag;
 		this.itemDurability = itemDurability;
 		this.miningSpeed = miningSpeed;
 		this.attackDamage = attackDamage;
@@ -40,11 +44,6 @@ public enum ModToolMaterial implements ToolMaterial{
 	}
 
 	@Override
-	public int getMiningLevel() {
-		return this.miningLevel;
-	}
-
-	@Override
 	public int getEnchantability() {
 		return this.enchantability;
 	}
@@ -52,5 +51,10 @@ public enum ModToolMaterial implements ToolMaterial{
 	@Override
 	public Ingredient getRepairIngredient() {
 		return this.repairIngredient.get();
+	}
+
+	@Override
+	public TagKey<Block> getInverseTag() {
+		return inverseTag;
 	}
 }

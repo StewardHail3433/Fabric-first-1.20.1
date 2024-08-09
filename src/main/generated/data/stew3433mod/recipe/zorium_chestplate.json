@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "T": {
+      "tag": "stew3433mod:tawin_logs"
+    },
+    "Z": {
+      "item": "stew3433mod:zorium"
+    }
+  },
+  "pattern": [
+    "Z Z",
+    "TZT",
+    "ZZZ"
+  ],
+  "result": {
+    "count": 1,
+    "id": "stew3433mod:zorium_chestplate"
+  }
+}

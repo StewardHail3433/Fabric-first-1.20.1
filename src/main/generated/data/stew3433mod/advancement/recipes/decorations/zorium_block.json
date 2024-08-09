@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:zorium_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_zorium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stew3433mod:zorium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_zorium"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:zorium_block"
+    ]
+  }
+}

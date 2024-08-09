@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_zorium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stew3433mod:raw_zorium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:zorium_from_smelting_raw_zorium"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_zorium"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:zorium_from_smelting_raw_zorium"
+    ]
+  }
+}
