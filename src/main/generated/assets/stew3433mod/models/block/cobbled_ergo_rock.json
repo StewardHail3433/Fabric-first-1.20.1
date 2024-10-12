@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "stew3433mod:block/cobbled_ergo_rock"
+  }
+}

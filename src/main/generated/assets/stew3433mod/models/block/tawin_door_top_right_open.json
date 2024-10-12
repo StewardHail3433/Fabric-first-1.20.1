@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right_open",
+  "textures": {
+    "bottom": "stew3433mod:block/tawin_door_bottom",
+    "top": "stew3433mod:block/tawin_door_top"
+  }
+}

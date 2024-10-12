@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "ergo_rock",
+  "ingredient": {
+    "item": "stew3433mod:cobbled_ergo_rock"
+  },
+  "result": {
+    "id": "stew3433mod:ergo_rock"
+  }
+}

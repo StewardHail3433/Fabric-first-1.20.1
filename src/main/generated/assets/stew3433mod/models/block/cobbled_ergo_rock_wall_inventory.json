@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "stew3433mod:block/cobbled_ergo_rock"
+  }
+}

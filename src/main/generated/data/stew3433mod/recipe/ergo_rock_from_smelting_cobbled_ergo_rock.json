@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.2,
+  "group": "ergo_rock",
+  "ingredient": {
+    "item": "stew3433mod:cobbled_ergo_rock"
+  },
+  "result": {
+    "id": "stew3433mod:ergo_rock"
+  }
+}

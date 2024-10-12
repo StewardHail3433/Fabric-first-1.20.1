@@ -16,10 +16,43 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        BlockStateModelGenerator.BlockTexturePool zoriumPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ZORIUM_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ZORIUM_BLOCK);
+        
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_ZORIUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TAWIN_DIRT);
         blockStateModelGenerator.registerLog(ModBlocks.TAWIN_LOG).log(ModBlocks.TAWIN_LOG);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_TAWIN_LOG).log(ModBlocks.STRIPPED_TAWIN_LOG);
+
+        BlockStateModelGenerator.BlockTexturePool tawinPlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.TAWIN_PLANKS);
+
+        tawinPlanksPool.stairs(ModBlocks.TAWIN_STAIRS);
+        tawinPlanksPool.slab(ModBlocks.TAWIN_SLAB);
+        tawinPlanksPool.button(ModBlocks.TAWIN_BUTTON);
+        tawinPlanksPool.pressurePlate(ModBlocks.TAWIN_PRESSURE_PLATE);
+        tawinPlanksPool.fence(ModBlocks.TAWIN_FENCE);
+        tawinPlanksPool.fenceGate(ModBlocks.TAWIN_FENCE_GATE);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.TAWIN_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.TAWIN_TRAPDOOR);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.TAWIN_LEAVES);
+
+        BlockStateModelGenerator.BlockTexturePool ergoRockPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ERGO_ROCK);
+        ergoRockPool.stairs(ModBlocks.ERGO_ROCK_STAIRS);
+        ergoRockPool.slab(ModBlocks.ERGO_ROCK_SLAB);
+        ergoRockPool.button(ModBlocks.ERGO_ROCK_BUTTON);
+        ergoRockPool.pressurePlate(ModBlocks.ERGO_ROCK_PRESSURE_PLATE);
+
+        BlockStateModelGenerator.BlockTexturePool cobbledErgoRockPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COBBLED_ERGO_ROCK);
+        cobbledErgoRockPool.stairs(ModBlocks.COBBLED_ERGO_ROCK_STAIRS);
+        cobbledErgoRockPool.slab(ModBlocks.COBBLED_ERGO_ROCK_SLAB);
+        cobbledErgoRockPool.button(ModBlocks.COBBLED_ERGO_ROCK_BUTTON);
+        cobbledErgoRockPool.pressurePlate(ModBlocks.COBBLED_ERGO_ROCK_PRESSURE_PLATE);
+        cobbledErgoRockPool.wall(ModBlocks.COBBLED_ERGO_ROCK_WALL);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STAFF_BUILDER);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COOL_CONTAINER);
+
     }
 
     @Override
@@ -37,5 +70,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ZORIUM_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ZORIUM_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ZORIUM_BOOTS));
+
+        // itemModelGenerator.register(ModItems.TAWIN_STAFF, Models.GENERATED);
+
+        
     }
 }

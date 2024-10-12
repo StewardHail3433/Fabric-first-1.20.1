@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "stew3433mod:block/tawin_planks",
+    "side": "stew3433mod:block/tawin_planks",
+    "top": "stew3433mod:block/tawin_planks"
+  }
+}

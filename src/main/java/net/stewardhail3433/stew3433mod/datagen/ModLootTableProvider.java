@@ -29,6 +29,17 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.ZORIUM_BLOCK);
         addDrop(ModBlocks.TAWIN_LOG);
         addDrop(ModBlocks.STRIPPED_TAWIN_LOG);
+        addDrop(ModBlocks.TAWIN_DIRT);
+        addDrop(ModBlocks.TAWIN_PLANKS);
+        addDrop(ModBlocks.TAWIN_STAIRS);
+        addDrop(ModBlocks.TAWIN_FENCE);
+        addDrop(ModBlocks.TAWIN_TRAPDOOR);
+        addDrop(ModBlocks.TAWIN_BUTTON);
+        addDrop(ModBlocks.TAWIN_DOOR);
+        addDrop(ModBlocks.TAWIN_PRESSURE_PLATE);
+        addDrop(ModBlocks.TAWIN_FENCE_GATE);
+        addDrop(ModBlocks.TAWIN_SLAB);
+
 
         addDrop(ModBlocks.DEEPSLATE_ZORIUM_ORE, ModOreDrops(ModBlocks.DEEPSLATE_ZORIUM_ORE, ModItems.RAW_ZORIUM));
     }

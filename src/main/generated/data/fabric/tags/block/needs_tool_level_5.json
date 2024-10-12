@@ -1,6 +1,16 @@
 {
   "values": [
     "stew3433mod:tawin_log",
-    "stew3433mod:stripped_tawin_log"
+    "stew3433mod:stripped_tawin_log",
+    "stew3433mod:tawin_planks",
+    "stew3433mod:tawin_stairs",
+    "stew3433mod:tawin_fence",
+    "stew3433mod:tawin_trapdoor",
+    "stew3433mod:tawin_button",
+    "stew3433mod:tawin_door",
+    "stew3433mod:tawin_pressure_plate",
+    "stew3433mod:tawin_fence_gate",
+    "stew3433mod:tawin_slab",
+    "stew3433mod:tawin_dirt"
   ]
 }

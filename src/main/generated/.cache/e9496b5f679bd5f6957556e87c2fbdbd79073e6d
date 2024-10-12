@@ -1,5 +1,15 @@
-// 1.21.1	2024-08-08T22:04:19.8217904	Stew3433 Mod/Block Loot Tables
-fb97797183f91f287ffc154a1a7e1d165fbcaea7 data\stew3433mod\loot_table\blocks\tawin_log.json
+// 1.21.1	2024-08-15T21:24:05.283436	Stew3433 Mod/Block Loot Tables
+997bc41404fcb3a681b6e3f2db3fb53b68f86c13 data\stew3433mod\loot_table\blocks\tawin_door.json
 068373935a0429fc2be02314e027fdfdb327b7d6 data\stew3433mod\loot_table\blocks\zorium_block.json
+734ffdecc646a578a4c1ee651c513a7e7ddc4377 data\stew3433mod\loot_table\blocks\tawin_pressure_plate.json
+d4bd357f90a8d27f2e2fc7f66a60dd6a0418bb8c data\stew3433mod\loot_table\blocks\tawin_fence.json
 3defb65b32b4b0ed12b8b689dd7a69d24be8aaec data\stew3433mod\loot_table\blocks\stripped_tawin_log.json
+a6b962193202730f23c6a91b5830c07baf8de038 data\stew3433mod\loot_table\blocks\tawin_trapdoor.json
+f92d215724535dbb179283a8237b029d519eac7a data\stew3433mod\loot_table\blocks\tawin_dirt.json
+fb97797183f91f287ffc154a1a7e1d165fbcaea7 data\stew3433mod\loot_table\blocks\tawin_log.json
+7296563d8238ea54c5bd4e7455df2acf5d966e8f data\stew3433mod\loot_table\blocks\tawin_fence_gate.json
+c155355126300cfa729274d56564f049c3edd6a1 data\stew3433mod\loot_table\blocks\tawin_button.json
+3f5d36282ef4222896a2253fdeec75135f619056 data\stew3433mod\loot_table\blocks\tawin_planks.json
+742f6d675fd028bbd6b5c7564c966fba02516851 data\stew3433mod\loot_table\blocks\tawin_slab.json
 dd35ed0f4ceb20b44bdc98aa98f3106ff380b1ed data\stew3433mod\loot_table\blocks\deepslate_zorium_ore.json
+0a10917bca6658a1ac241a7176468896fe1fd219 data\stew3433mod\loot_table\blocks\tawin_stairs.json

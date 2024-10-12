@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "stew3433mod:block/ergo_rock_pressure_plate"
+    },
+    "powered=true": {
+      "model": "stew3433mod:block/ergo_rock_pressure_plate_down"
+    }
+  }
+}

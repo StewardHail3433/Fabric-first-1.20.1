@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "stew3433mod:block/tawin_planks"
+  }
+}

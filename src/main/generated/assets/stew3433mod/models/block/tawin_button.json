@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "stew3433mod:block/tawin_planks"
+  }
+}

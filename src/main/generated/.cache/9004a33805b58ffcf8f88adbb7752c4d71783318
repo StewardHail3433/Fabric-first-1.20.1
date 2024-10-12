@@ -1,9 +1,21 @@
-// 1.21.1	2024-08-08T22:04:19.8227912	Stew3433 Mod/Tags for minecraft:block
-e5a3121ca6d71dfa0d8f125fe210828bb5ab3f40 data\minecraft\tags\block\logs.json
-ad41c11578d63f82d03fa9772d8d4d115d17e9a7 data\fabric\tags\block\needs_tool_level_4.json
+// 1.21.1	2024-08-15T21:24:05.2874394	Stew3433 Mod/Tags for minecraft:block
 e5a3121ca6d71dfa0d8f125fe210828bb5ab3f40 data\minecraft\tags\block\logs_that_burn.json
 ad41c11578d63f82d03fa9772d8d4d115d17e9a7 data\minecraft\tags\block\mineable\pickaxe.json
-e5a3121ca6d71dfa0d8f125fe210828bb5ab3f40 data\minecraft\tags\block\mineable\axe.json
-e5a3121ca6d71dfa0d8f125fe210828bb5ab3f40 data\fabric\tags\block\needs_tool_level_5.json
+15082eeb10e4cc23ab1db1abc6e6639f31a1af97 data\minecraft\tags\block\fences.json
+075322ceb36acb4cf8d62e9d78628693a51a080c data\minecraft\tags\block\slabs.json
+ff41184f6a53cda428a9922b2da9db5781bad496 data\fabric\tags\block\needs_tool_level_5.json
+e5a3121ca6d71dfa0d8f125fe210828bb5ab3f40 data\minecraft\tags\block\logs.json
+971379dd52846e88b4af8be2d41a49d416b53ea3 data\minecraft\tags\block\leaves.json
+ad41c11578d63f82d03fa9772d8d4d115d17e9a7 data\fabric\tags\block\needs_tool_level_4.json
+639421a3c3186effa19f4402da604824c858e04a data\minecraft\tags\block\stairs.json
+723e212944188d1c965209ce5263f5f1a4d90de5 data\minecraft\tags\block\walls.json
+aa19feefe2886aa3556c575efbebdef6ab8a0f4e data\minecraft\tags\block\mineable\axe.json
 e5a3121ca6d71dfa0d8f125fe210828bb5ab3f40 data\stew3433mod\tags\block\tawin_logs.json
-e5a3121ca6d71dfa0d8f125fe210828bb5ab3f40 data\minecraft\tags\block\incorrect_for_netherite_tool.json
+b242a79a08482cfdcde41d6d8706c6574709667d data\minecraft\tags\block\planks.json
+4b4273fcf56ed4f797998bc35f69d4cf427425cf data\minecraft\tags\block\fence_gates.json
+c472dba0066183cf624213cbf5742fd22777fb6c data\minecraft\tags\block\mineable\shovel.json
+ff41184f6a53cda428a9922b2da9db5781bad496 data\minecraft\tags\block\incorrect_for_netherite_tool.json
+db3fc0fa3e6382b770cfc8b3cacc5f1f9bd4e170 data\minecraft\tags\block\trapdoors.json
+a035630b7a022f1dd870fe6d6fe03be08131fe8c data\minecraft\tags\block\buttons.json
+1addfcdded22255e942689504a92b91be1ee6aaa data\minecraft\tags\block\doors.json
+9bd848c4c8d465b24a0abbf9d9b8c4cae76af808 data\minecraft\tags\block\pressure_plates.json

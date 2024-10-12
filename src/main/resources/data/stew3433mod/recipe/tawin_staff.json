@@ -1,0 +1,26 @@
+{
+    "type": "stew3433mod:staff_building",
+    "group": "staffs",
+    "width": 5,
+    "height": 3,
+    "pattern": [
+      "Z   D",
+      "ZTZT ",
+      "Z   D"
+    ],
+    "key": {
+      "Z": {
+        "item": "stew3433mod:zorium"
+      },
+      "T": {
+        "tag": "stew3433mod:tawin_logs"
+      },
+      "D": {
+        "item": "minecraft:diamond"
+      }
+    },
+    "result": {
+      "id": "stew3433mod:tawin_staff",
+      "count": 1
+    }
+}

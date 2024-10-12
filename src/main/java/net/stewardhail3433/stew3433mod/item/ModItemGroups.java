@@ -23,6 +23,31 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ZORIUM_BLOCK.asItem());
                         entries.add(ModBlocks.TAWIN_LOG.asItem());
                         entries.add(ModBlocks.STRIPPED_TAWIN_LOG.asItem());
+                        entries.add(ModBlocks.TAWIN_PLANKS.asItem());
+                        entries.add(ModBlocks.TAWIN_STAIRS.asItem());
+                        entries.add(ModBlocks.TAWIN_SLAB.asItem());
+                        entries.add(ModBlocks.TAWIN_FENCE.asItem());
+                        entries.add(ModBlocks.TAWIN_FENCE_GATE.asItem());
+                        entries.add(ModBlocks.TAWIN_BUTTON.asItem());
+                        entries.add(ModBlocks.TAWIN_DOOR.asItem());
+                        entries.add(ModBlocks.TAWIN_TRAPDOOR.asItem());
+                        entries.add(ModBlocks.TAWIN_DIRT.asItem());
+                        entries.add(ModBlocks.TAWIN_LEAVES.asItem());
+                        entries.add(ModBlocks.ERGO_ROCK.asItem());
+                        entries.add(ModBlocks.COBBLED_ERGO_ROCK.asItem());
+
+                        entries.add(ModBlocks.ERGO_ROCK_STAIRS.asItem());
+                        entries.add(ModBlocks.ERGO_ROCK_BUTTON.asItem());
+                        entries.add(ModBlocks.ERGO_ROCK_PRESSURE_PLATE.asItem());
+                        entries.add(ModBlocks.ERGO_ROCK_SLAB.asItem());
+
+                        entries.add(ModBlocks.COBBLED_ERGO_ROCK_STAIRS.asItem());
+                        entries.add(ModBlocks.COBBLED_ERGO_ROCK_BUTTON.asItem());
+                        entries.add(ModBlocks.COBBLED_ERGO_ROCK_PRESSURE_PLATE.asItem());
+                        entries.add(ModBlocks.COBBLED_ERGO_ROCK_SLAB.asItem());
+                        entries.add(ModBlocks.COBBLED_ERGO_ROCK_WALL.asItem());
+
+
 
                         entries.add(ModItems.ZORIUM_SWORD);
                         entries.add(ModItems.ZORIUM_PICKAXE);
@@ -34,6 +59,8 @@ public class ModItemGroups {
                         entries.add(ModItems.ZORIUM_CHESTPLATE);
                         entries.add(ModItems.ZORIUM_LEGGINGS);
                         entries.add(ModItems.ZORIUM_BOOTS);
+
+                        entries.add(ModItems.TAWIN_STAFF);
                         
                     }).
                     build());

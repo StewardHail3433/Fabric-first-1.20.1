@@ -15,6 +15,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.stewardhail3433.stew3433mod.Stew3433Mod;
+import net.stewardhail3433.stew3433mod.item.custom.staff.StaffItem;
+import net.stewardhail3433.stew3433mod.item.custom.staff.StaffMaterials;
 
 public class ModItems {
     public static final Item ZORIUM = registerItem("zorium", new Item(new Item.Settings()));
@@ -31,6 +33,8 @@ public class ModItems {
     public static final Item ZORIUM_LEGGINGS = registerItem("zorium_leggings", new ArmorItem(ModArmorMaterial.ZORIUM, ArmorItem.Type.LEGGINGS, (new Item.Settings()).maxDamage(net.minecraft.item.ArmorItem.Type.LEGGINGS.getMaxDamage(38))));
     public static final Item ZORIUM_BOOTS = registerItem("zorium_boots", new ArmorItem(ModArmorMaterial.ZORIUM, ArmorItem.Type.BOOTS, (new Item.Settings()).maxDamage(net.minecraft.item.ArmorItem.Type.BOOTS.getMaxDamage(38))));
 
+    public static final Item TAWIN_STAFF = registerItem("tawin_staff", new StaffItem(new Item.Settings(), StaffMaterials.TAWIN, 20));
+    
     public static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(ZORIUM);
         entries.add(RAW_ZORIUM);

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "stew3433mod:ergo_rock"
+  },
+  "result": {
+    "count": 1,
+    "id": "stew3433mod:ergo_rock_stairs"
+  }
+}

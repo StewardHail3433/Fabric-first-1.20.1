@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "stew3433mod:block/ergo_rock_slab"
+    },
+    "type=double": {
+      "model": "stew3433mod:block/ergo_rock"
+    },
+    "type=top": {
+      "model": "stew3433mod:block/ergo_rock_slab_top"
+    }
+  }
+}

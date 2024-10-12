@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "stew3433mod:block/cobbled_ergo_rock",
+    "side": "stew3433mod:block/cobbled_ergo_rock",
+    "top": "stew3433mod:block/cobbled_ergo_rock"
+  }
+}

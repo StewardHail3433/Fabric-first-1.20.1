@@ -12,11 +12,37 @@
     "item.stew3433mod.zorium_chestplate": "Zorium Chestplate",
     "item.stew3433mod.zorium_leggings": "Zorium Leggings",
     "item.stew3433mod.zorium_boots": "Zorium Boots",
+    
+    "item.stew3433mod.tawin_staff": "Tawin Staff",
 
     "block.stew3433mod.deepslate_zorium_ore": "Zorium Ore",
     "block.stew3433mod.zorium_block": "Block of Zorium",
     "block.stew3433mod.tawin_log": "Tawin Log",
     "block.stew3433mod.stripped_tawin_log": "Stripped Tawin Log",
 
-    "itemgroup.zorium": "Stew3433 Mod Group"
+    "block.stew3433mod.tawin_planks": "Tawin Planks",
+    "block.stew3433mod.tawin_stairs": "Tawin Stairs",
+    "block.stew3433mod.tawin_door": "Tawin Door",
+    "block.stew3433mod.tawin_trapdoor": "Tawin Trapdoor",
+    "block.stew3433mod.tawin_fence": "Tawin Fence",
+    "block.stew3433mod.tawin_fence_gate": "Tawin Fence Gate",
+    "block.stew3433mod.tawin_pressure_plate": "Tawin Pressure plate",
+    "block.stew3433mod.tawin_slab": "Tawin Slab",
+    "block.stew3433mod.tawin_button": "Tawin Button",
+
+    "block.stew3433mod.ergo_rock": "Ergo Rock",
+    "block.stew3433mod.cobbled_ergo_rock": "Cobbled Ergo Rock",
+
+    "block.stew3433mod.ergo_rock_stairs": "Ergo Rock Stairs",
+    "block.stew3433mod.ergo_rock_button": "Ergo Rock Button",
+    "block.stew3433mod.ergo_rock_pressure_plate": "Ergo Rock Pressure Plate",
+    "block.stew3433mod.ergo_rock_slab": "Ergo Rock Slab",
+
+    "block.stew3433mod.cobbled_ergo_rock_stairs": "Cobbled Ergo Rock Stairs",
+    "block.stew3433mod.cobbled_ergo_rock_button": "Cobbled Ergo Rock Button",
+    "block.stew3433mod.cobbled_ergo_rock_pressure_plate": "Cobbled Ergo Rock Pressure Plate",
+    "block.stew3433mod.cobbled_ergo_rock_slab": "Cobbled Ergo Rock Slab",
+    "block.stew3433mod.cobbled_ergo_rock_wall": "Cobbled Ergo Rock Wall",
+
+    "itemgroup.stew3433mod": "Stew3433 Mod Group"
 }

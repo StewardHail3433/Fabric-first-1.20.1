@@ -9,6 +9,7 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper.WrapperLookup;
 import net.minecraft.util.Identifier;
@@ -28,14 +29,56 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         public void generate(RecipeExporter exporter) {
 
                 offerSmelting(exporter, ZORIUM_SMELTABLES, RecipeCategory.MISC, ModItems.ZORIUM,
-                                0.7f, 200, "ruby");
+                        0.7f, 200, "zorium");
                 offerBlasting(exporter, ZORIUM_SMELTABLES, RecipeCategory.MISC, ModItems.ZORIUM,
-                                0.7f, 100, "ruby");
+                        0.7f, 100, "zorium");
 
                 offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.ZORIUM,
-                                RecipeCategory.DECORATIONS,
-                                ModBlocks.ZORIUM_BLOCK);
+                        RecipeCategory.DECORATIONS,
+                        ModBlocks.ZORIUM_BLOCK);
 
+                this.generateZoriumTools(exporter);
+                this.generateZoriumArmor(exporter);
+                this.generateErgoRockRecipes(exporter);
+                
+                // StaffRecipeJsonBuilder.create(new ItemStack(ModItems.TAWIN_STAFF))
+                //         .input('S', Ingredient.ofItems(Items.STICK))
+                //         .input('G', Ingredient.ofItems(Items.GOLD_INGOT))
+                //         .input('D', Ingredient.ofItems(Items.DIAMOND))
+                //         .input('E', Ingredient.ofItems(Items.EMERALD))
+                //         .pattern("SGSGS")
+                //         .pattern("GDEDG")
+                //         .pattern("SGSGS")
+                //         .offerTo(exporter, Identifier.of(Stew3433Mod.MOD_ID, "tawin_staff"));
+
+        }
+
+        private void generateErgoRockRecipes(RecipeExporter exporter) {
+                offerSmelting(exporter, List.of(ModBlocks.COBBLED_ERGO_ROCK.asItem()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.ERGO_ROCK.asItem(),
+                        0.2f,200, "ergo_rock");
+                offerBlasting(exporter, List.of(ModBlocks.COBBLED_ERGO_ROCK.asItem()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.ERGO_ROCK.asItem(),
+                        0.7f, 100, "ergo_rock");
+
+                offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ERGO_ROCK_SLAB.asItem(), ModBlocks.ERGO_ROCK.asItem());
+                offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COBBLED_ERGO_ROCK_SLAB.asItem(), ModBlocks.COBBLED_ERGO_ROCK.asItem());
+                
+                offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COBBLED_ERGO_ROCK_WALL.asItem(), ModBlocks.COBBLED_ERGO_ROCK.asItem());
+
+                offerPressurePlateRecipe(exporter, ModBlocks.ERGO_ROCK_PRESSURE_PLATE.asItem(), ModBlocks.ERGO_ROCK.asItem());
+                offerPressurePlateRecipe(exporter, ModBlocks.COBBLED_ERGO_ROCK_PRESSURE_PLATE.asItem(), ModBlocks.COBBLED_ERGO_ROCK.asItem());
+
+                offerStairsRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ERGO_ROCK_STAIRS.asItem(), ModBlocks.ERGO_ROCK.asItem());
+                offerStairsRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COBBLED_ERGO_ROCK_STAIRS.asItem(), ModBlocks.COBBLED_ERGO_ROCK.asItem());
+
+
+                offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ERGO_ROCK_SLAB.asItem(), ModBlocks.ERGO_ROCK.asItem());
+                offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ERGO_ROCK_STAIRS.asItem(), ModBlocks.ERGO_ROCK.asItem());
+                offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COBBLED_ERGO_ROCK_SLAB.asItem(), ModBlocks.COBBLED_ERGO_ROCK.asItem());
+                offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COBBLED_ERGO_ROCK_STAIRS.asItem(), ModBlocks.COBBLED_ERGO_ROCK.asItem());
+                offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COBBLED_ERGO_ROCK_WALL.asItem(), ModBlocks.COBBLED_ERGO_ROCK.asItem());
+        }
+
+        private void generateZoriumTools(RecipeExporter exporter) {
                 ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ZORIUM_SWORD, 1)
                                 .pattern("Z")
                                 .pattern("Z")
@@ -86,7 +129,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                                 .criterion(hasItem(ModItems.ZORIUM), conditionsFromItem(ModItems.ZORIUM))
                                 .criterion(hasItem(ModItems.ZORIUM_HOE), conditionsFromItem(ModItems.ZORIUM_HOE))
                                 .offerTo(exporter, Identifier.of(getRecipeName(ModItems.ZORIUM_HOE)));
+        }
 
+        private void generateZoriumArmor(RecipeExporter exporter) {
                 ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ZORIUM_CHESTPLATE)
                                 .pattern("Z Z")
                                 .pattern("TZT")
@@ -127,4 +172,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                                 .offerTo(exporter, Identifier.of(getRecipeName(ModItems.ZORIUM_BOOTS)));
         }
 
+        private void offerStairsRecipe(RecipeExporter exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input) {
+                ShapedRecipeJsonBuilder.create(category, output)
+                        .pattern("#  ")
+                        .pattern("## ")
+                        .pattern("###")
+                        .input('#', Ingredient.ofItems(input))
+                        .criterion(hasItem(input), conditionsFromItem((input)))
+                        .offerTo(exporter, Identifier.of(getRecipeName(output) + "_left"));
+                
+                ShapedRecipeJsonBuilder.create(category, output)
+                        .pattern("  #")
+                        .pattern(" ##")
+                        .pattern("###")
+                        .input('#', input)
+                        .criterion(hasItem(input), conditionsFromItem(input))
+                        .offerTo(exporter, Identifier.of(getRecipeName(output) + "_right"));
+        }
 }

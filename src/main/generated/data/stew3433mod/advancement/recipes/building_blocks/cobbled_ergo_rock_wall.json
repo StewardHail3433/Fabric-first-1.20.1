@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cobbled_ergo_rock": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stew3433mod:cobbled_ergo_rock"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "stew3433mod:cobbled_ergo_rock_wall"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cobbled_ergo_rock"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "stew3433mod:cobbled_ergo_rock_wall"
+    ]
+  }
+}

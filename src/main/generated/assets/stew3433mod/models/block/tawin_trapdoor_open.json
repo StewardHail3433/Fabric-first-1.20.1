@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_trapdoor_open",
+  "textures": {
+    "texture": "stew3433mod:block/tawin_trapdoor"
+  }
+}
